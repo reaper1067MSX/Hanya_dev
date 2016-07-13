@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="en" class="no-js">
+
+    <head>
+	
+		<!--Cabecera de Formato HTML5 -->
+	
+        <meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Login and Registration - Dulces Hanya</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		
+		<!--Identificacion de la pagina -->
+		
+       
+        <meta name="description" content="Pagina de registro e inicio de sesion de la dulceria hanya" />
+        <meta name="keywords" content="dulces, tortas, pasteles, registro, logon, register, login, sing in, sing up" />
+        <meta name="author" content="Santiago Arguello Ojedis" />
+		<meta name="copyright" content="Dulces de Hanya" />
+		<meta name="organization" content="Dulces de Hanya S.A" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+		
+		<!-- Bootstrap core CSS -->
+        <link rel="stylesheet" type="text/css" href="../css/login.css" />
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../css/animate-custom.css" />
+		
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+		<link href="../css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+		
+		<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+		<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+		<script src="../js/ie-emulation-modes-warning.js"></script>
+		
+    </head>
+     <body>
+         <div class="container">
+             <!-- TOP BAR Con link hacia index -->
+             <div class="codrops-top">
+                 <a href="../index.html">
+                     <strong>&laquo; Regresar al sitio </strong>
+                 </a>
+                 
+                 <div class="clr"></div>
+             </div><!--/ Codrops top bar -->
+             <header>
+                 <h1>Login & Registro de <span>Dulces de Hanya</span></h1>
+ 				<nav class="codrops-demos">
+ 					<span>Click <strong>"Join us"</strong> Para registrarte</span>
+ 					<!--  <a href="index.html" class="current-demo">Demo 1</a>
+ 					<a href="index2.html">Demo 2</a>
+ 					<a href="index3.html">Demo 3</a> -->
+ 				</nav>
+             </header>
+             <section>				
+                 <div id="container_demo" >
+                     <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
+                     <a class="hiddenanchor" id="toregister"></a>
+                     <a class="hiddenanchor" id="tologin"></a>
+                     <div id="wrapper">
+					 
+					 
+					 <!-- ========================================= LOGIN DE LA PAGINA ========================================= -->
+                         <div id="login" class="animate form">
+                             <form  action="../index.html" autocomplete="on">  <!--archivo de ejecucion del login -->
+                                 <h2>Log in</h2> 
+                                 <p> 
+                                     <label for="username" class="uname" data-icon="u" > Your email or username </label>
+                                     <input id="username" name="username" required="required" type="text" placeholder="myusername or mymail@mail.com"/>
+                                 </p>
+                                 <p> 
+                                     <label for="password" class="youpasswd" data-icon="p"> Your password </label>
+                                     <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" /> 
+                                 </p>
+                                 <p class="keeplogin"> 
+ 									<input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
+ 									<label for="loginkeeping">Keep me logged in</label>
+ 								</p>
+								
+								<!-- Boton de ENVIAR DATOS LOGIN -->
+                                 <p class="login button"> 
+                                     <input type="submit" value="Login" /> 
+ 								</p>
+								
+								<!-- Boton de ENVIAR A LOGIN -->
+                                 <p class="change_link">
+ 									Not a member yet ?
+ 									<a href="#toregister" class="to_register">Join us</a>
+ 								</p>
+                             </form>
+                         </div>
+ 
+ 
+						<!-- ========================================= Register DE LA PAGINA ========================================= -->
+                         <div id="register" class="animate form">
+                             <form  action="../index.html" autocomplete="on"> <!--archivo de ejecucion del registro -->
+                                 <h2> Sign up </h2> 
+								 <br>
+                                 <p> 
+                                     <label for="usernamesignup" class="uname" data-icon="u">Your username</label>
+                                     <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690" />
+                                 </p>
+                                 <p> 
+                                     <label for="emailsignup" class="youmail" data-icon="e" > Your email</label>
+                                     <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="mysupermail@mail.com"/> 
+                                 </p>
+                                 <p> 
+                                     <label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
+                                     <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                                 </p>
+                                 <p> 
+                                     <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your password </label>
+                                     <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                                 </p>
+								 
+								 <h2> Datos de usuario </h2> 
+								 <br>
+								 
+								 <p> 
+                                     <label for="nombresgnup" class="uname" data-icon="u">Nombres</label>
+                                     <input id="nombresgnup" name="nombresgnup" required="required" type="text" placeholder="Raul Alberto" />
+                                 </p>
+								 
+								 <p> 
+                                     <label for="apellidosgnup" class="uname" data-icon="u">Apellidos</label>
+                                     <input id="apellidosgnup" name="apellidosgnup" required="required" type="text" placeholder="Arguello Ojedis" />
+                                 </p>
+								 
+								 <p> 
+                                     <label for="cedulagnup" class="uname" data-icon="u">Cedula</label>
+                                     <input id="cedulagnup" name="cedulagnup" required="required" type="text" placeholder="0952544545" />
+                                 </p>
+								 
+								 
+								 <!-- Boton de ENVIAR DATOS REGISTRO -->
+                                 <p class="signin button"> 
+ 									<input type="submit" value="Sign up"/> 
+ 								</p>
+								<!-- Boton de ENVIAR A LOGIN -->
+                                 <p class="change_link">  
+ 									Already a member ?
+ 									<a href="#tologin" class="to_register"> Go and log in </a>
+ 								</p>
+                             </form>
+                         </div>
+ 						
+                     </div>
+                 </div>  
+             </section>
+         </div>
+     </body>
+ </html> 
